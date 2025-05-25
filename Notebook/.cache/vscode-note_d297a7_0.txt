@@ -1,0 +1,29 @@
+//Que:1  Values:- a=0, b=1, c=0  Expressions:- a || b && !c
+Ans: false (0)
+
+//Que:2   Values:- x=1 y=0 z=1 Expressions:- !x && (y||z)
+Ans: false (0)
+
+//Que:3   Values:- p=1 q=0 r=0 Expressions:- p && !q || r
+Ans: true (1)
+
+//Que:4   Values:- a-1 b=0 c=1 Expressions:- !a || !b && c
+Ans: true (1)
+
+//Que:5   Values:- m=0 n=1     Expressions:- (m || n) && (!m || n)
+Ans: true (1)
+
+//Que:6   Values:- x=1 y=1 z=0  Expressions:- x && y || !z
+Ans: true (1)
+
+//Que:7   Values:- a=1 b= 1 c=0 Expressions:- !(a && b) || c
+Ans: true (1)
+
+//Que:8   Values:- p=0 q=0 r=1 s=1 Expressions:- (!p || q) && (r || !s)
+Ans: true (1)
+
+//Que:9   Values:- x=0 y=1 z=1 w=0 Expressions:- !(x || y) && (z || !w)
+Ans: false (0)
+
+//Que:10  Values:- a=1 b=0 c=1 d=0 Expressions:- a && (b || (c && !d))
+Ans: true (1)

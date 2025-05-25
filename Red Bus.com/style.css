@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* HEADER (NAVIGATION BAR) START HERE */
+header {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    box-shadow: 0 1px 12px rgba(29, 29, 29, .102);
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side red bus logos */
+.left-side {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-side a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ticket {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .05px;
+    line-height: 16px;
+    text-align: center;
+    color: #d63941;
+}
+
+/* Right Side icons */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+/* HEADER (NAVIGATION BAR) END HERE */
+
+/* HOME BANNER PART START HERE */
+main {
+    width: 1280px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.heading {
+    position: relative;
+    top: -223px;
+    left: 35px;
+
+}
+
+.heading h1 {
+    font-size: 45px;
+    line-height: 52px;
+    color: #fcfcfc;
+    text-align: left;
+    font-weight: 700;
+    width: 848px;
+}
+
+/* HOME BANNER PART END HERE */
+
+/* BOOKING SECTION */
+#container {
+    width: 1280px;
+    position: relative;
+}
+
+.book {
+    width: 1216px;
+    height: 126px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: -170px;
+    left: 30px;
+}
+
+.box {
+    width: 896px;
+    height: 66px;
+    border: 1px solid rgb(182, 179, 179);
+    border-radius: 16px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    display: flex;
+}
+
+.child-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.child-box1,
+.child-box2 {
+    width: 298px;
+    height: 100%;
+    border-right: 1px solid rgb(182, 179, 179);
+}
+
+.box-1 {
+    width: 280px;
+    height: 66px;
+    border: 1px solid rgb(182, 179, 179);
+    border-radius: 16px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    margin-left: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.box-1 button {
+    width: 52px;
+    height: 32px;
+    border: 2px solid #4A4A4A;
+    border-radius: ;
+    background-color: #E5E5E5;
+    border-radius: 999px;
+    position: relative;
+    right: -20px;
+    top: 10%;
+}
+
+.checkbox {
+    width: 17px;
+    height: 17px;
+    background-color: #4A4A4A;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.box-1 button:active {
+    background-color: #D63941;
+    border: none;
+}
+
+.box-1 button:active .checkbox {
+    transform: translateX(20px);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+/* BOOKING SECTION */
+
+/* Search Button */
+.search-button {
+    width: 300px;
+    height: 48px;
+    border-radius: 999px;
+    border: none;
+    color: white;
+    background-color: #D63941;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    z-index: 12;
+}
+
+/* book-train */
+#book-train {
+    width: 1280px;
+    margin-left: 15px;
+}
+
+.new-train {
+    margin: 20px 0 0 30px;
+    width: 1256px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.text h2 {
+    font-size: 22px;
+    line-height: 27px;
+    color: #1D1D1D;
+}
+
+.text p {
+    font-size: 14px;
+    color: #1D1D1DA3;
+}
+
+/* Mini card */
+.mincard {
+    width: 1216px;
+    height: 101px;
+    margin: 20px 0 0 20px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #F9FAFB;
+    display: flex;
+    align-items: center;
+}
+
+.offercalwrapper {
+    width: 667px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1D1D1D;
+    gap: 12px;
+}
+
+.offerText {
+    text-align: left;
+}
+
+.calender-1 {
+    width: 80px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    position: relative;
+    padding: 10px;
+    color: #1D1D1D;
+    font-size: 14px;
+    font-weight: 500;
+
+    /* background: linear-gradient(to right, #fff, #fff), linear-gradient(135deg, var(--cal-color)); */
+    /* background: linear-gradient(to right, #fff, #fff), linear-gradient(135deg, var(--cal-color));
+    --cal-color: #ED6213, #ED1396, #8D32E9;
+    --translate-y: translateY(-0rem);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box; */
+}
+
+.calender-1 img {
+    position: absolute;
+    top: -15px;
+    z-index: 10;
+}
+
+.Aug-cal .Aug {
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px;
+    padding: 4px 45px;
+}
+
+.animation {
+    display: grid;
+    flex-direction: column;
+}
+
+.animation span {
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    padding-top: 2px;
+    letter-spacing: -0.3px;
+    color: #007B2D;
+    animation: slide-up 3s infinite 2.2s forwards;
+}
+
+.animation span:nth-child(2) {
+    animation: slide 3s infinite 2s forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    opacity: 0;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        top: 8px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Button for train booking */
+.buttonwrapper {
+    width: 218px;
+    height: 68px;
+    margin-left: 300px;
+    padding-top: 5px;
+}
+
+.tonalButton {
+    width: 100%;
+    height: 40px;
+    color: #1d1d1d;
+    background-color: #FED9D5;
+    border: none;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.partner {
+    color: #1D1D1DA3;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: -0.08px;
+}
+
+/* Social Proofing */
+.socialproofingcontainer {
+    margin-top: 30px;
+    width: 1280px;
+    height: 160px;
+    background-color: #ADF2B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialproofingtext {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    align-items: center;
+}
+
+.socialproofingtext .title {
+    color: #1D1D1D;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+}
+
+/* Offer section container */
+.headingviewmore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 30px;
+}
+
+.allbustrain {
+    display: flex;
+    gap: 10px;
+    margin: 0px 0px 15px 30px;
+}
+
+.section {
+    width: 48px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.offercards {
+    width: 1248px;
+    height: 216px;
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.firstoffercard img {
+    width: 296px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.buttontext {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.busbutton {
+    width: 37px;
+    height: 24px;
+    color: #FCFCFC;
+    background-color: #1D1D1D60;
+    border-radius: 8px;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pricetag {
+    width: 90px;
+    height: 40px;
+    color: #1d1d1d;
+    background-color: white;
+    border: none;
+    border-radius: 999px;
+    position: relative;
+    bottom: 60px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* What's new section */
+#whatsnew {
+    margin: 30px 0 0 30px;
+}
+
+.whatsnewcard {
+    width: 1248px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsnewimg img {
+    width: 296px;
+    height: 160px;
+}
+
+/* GOVERNMENT BUSES SECTION */
+#govbuses-container {
+    width: 1248px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.govbusescard-section {
+    width: 1248px;
+    display: flex;
+    gap: 10px;
+}
+
+#govbuses-container .fullcard {
+    width: 296px;
+    height: 236px;
+    /* border: 1px solid; */
+}
+
+.govbusescard-section .buscard {
+    width: 100%;
+    height: 196px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
+    position: relative;
+    top: 10px;
+    z-index: 5;
+}
+
+.govbusescard-section .buscard .buscard-card {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.govttext .icon {
+    width: 52px;
+    height: 20px;
+    background-color: #007B2D;
+    border-radius: 7px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    margin-left: 15px;
+}
+
+.buscard-card-1 .text {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.buscard-card-1-button {
+    width: 264px;
+    height: 24px;
+    background-color: #F2F2F8;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    padding: 8px;
+    margin: auto;
+}
+
+.govbusescard-section .smallcard {
+    width: 296px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+    border-radius: 0px 0px 16px 16px;
+    background-color: #FAE7E8;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.textlines {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: slideUp 6.5s steps(5) infinite;
+}
+
+.slidetext {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-250px);
+    }
+}
+
+/* TESTIMONIAL CONTAINER */
+#testimonialcontainer {
+    width: 1248px;
+    height: 176px;
+    margin-left: 30px;
+}
+
+#testimonialcontainer .testimonialboxes {
+    width: 1248px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#testimonialcontainer .testimonialboxes .testimonial-box {
+    width: 220px;
+    height: 100%;
+    border: 1px solid var(--Stroke-Standard-weaker, #e5e5e5);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+    color: #1d1d1d;
+}
+
+/* GET THE RED BUS APP */
+#gettheapp {
+    width: 1248px;
+    margin: 100px 0px 0px 30px;
+}
+
+#gettheapp .rating {
+    width: 1216px;
+    height: 97px;
+    box-shadow: 0px 1px 12px 0px #1D1D1D1A;
+    border-radius: 16px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gettheapp .rating-text-button {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#gettheapp .rating button {
+    width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 999px;
+    background-color: #FED9D5;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding: 12px;
+    margin-right: 20px;
+}
+
+/* ONLINE BUS TICKET BOOKING ON RED BUS */
+#onlinebooking {
+    width: 1280px;
+}
+
+#onlinebooking .ticketbooking {
+    width: 1248px;
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.ticketbooking h2 {
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 12px;
+}
+
+.paragraphcontainer,
+.onlienbookingreason ul {
+    color: rgba(29, 29, 29, 0.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.paragraphcontainer p {
+    padding: 15px 0px;
+}
+
+.paragraphcontainer ul li,
+.onlienbookingreason ul li {
+    padding: 7px 0px;
+}
+
+/* Reasons for Bus Booking on redBus */
+.onlienbookingreason {
+    width: 1248px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.onlienbookingreason h2,
+#redDeals h2 {
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 12px;
+}
+
+.heading-text p,
+#redDeals .desc {
+    color: rgba(29, 29, 29, 0.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+/* BUS BOOKING REDDEALS ON REDBUS */
+#redDeals {
+    width: 1248px;
+    height: 165px;
+    margin: 20px 0px 20px 30px;
+}
+
+#redDeals .redDealcard {
+    width: 1184px;
+    height: 81px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redDealImgContent {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.redDealcard button {
+    width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 999px;
+    background-color: #D63941;
+    font-size: 16px;
+    font-weight: 700;
+    color: White;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+
+
+/* FAQs related to Bus Tickets Booking */
+#faqcontainer h2 {
+    font-size: 22px;
+    padding: 12px 0px 30px 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #1d1d1d;
+}
+
+.tabswrapper {
+    display: flex;
+    gap: 30px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.sectioncontent {
+    padding: 15px 0px;
+}
+.faqitem {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1d1d1d;
+    padding: 15px 0px;
+}
+.faqitem i {
+    float: right;
+    padding-right: 40px;
+}
+.dividerfullwidth {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e5e5e5;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1230px;
+}
+
+/* FOOTER */
+footer {
+    width: 1280px;
+    background-color: #F2F2F8;
+    padding-top: 20px;
+}
+footer .footer-container  {
+    margin-left: 20px;
+}
+footer .footercontent {
+    padding: 30px 70px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-links h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0px 13px;
+}
+.footercontent li {
+    list-style: none;
+    padding: 15px 0px;
+    font-size: 14px;
+    height: 700;
+    font-weight: 700;
+    line-height: 20px;
+}
+.footercontent li a {
+    color: #4040f2;
+    padding: 8px 15px;
+}
+
+.footercontent li a:hover {
+    background-color: #E8E8F8;
+    height: 40px;
+    border-radius: 999px;
+}
+
+.aboutus-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+.aboutus-text .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(29, 29, 29, 0.64);
+}
+
+.socialprofile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 15px 30px;
+}
+
+.socialprofile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright-text {
+    color: rgba(29, 29, 29, 0.64);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.socialprofile .icon img{
+    width: 32px;
+    height: 32px;
+    filter: grayscale(1);
+}

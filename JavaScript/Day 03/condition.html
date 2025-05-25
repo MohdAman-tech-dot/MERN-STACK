@@ -1,0 +1,90 @@
+<html>
+<script>
+    //Que:1 W.A.P tha check if its raining or not and advises whether to take raincoat or not
+    var rain = true;
+    if (rain == true) {
+        console.log("Raincoat is required")
+    }
+    else {
+        console.log("Raincoat is not required")
+    }
+
+    //Que:2 C.A.P that determine if a cibil score is excellent, good, average or poor on given ranges
+    var cibilscore = 500;
+    if (cibilscore >= 800) {
+        console.log("Excellent")
+    } else if (cibilscore >= 750 && cibilscore < 800) {
+        console.log("Good")
+    } else if (cibilscore >= 700 && cibilscore < 750) {
+        console.log("Average")
+    } else {
+        console.log("Poor")
+    }
+
+    //Que:3 Validate a password on its length and calassify it as weak, moderate, or strong
+    // var password = prompt("Enter the Password:");
+    // if (password.length >= 8 && password.length <= 16) {
+    //     console.log("Its Strong")
+    // } else if (password.length > 4 && password.length < 8) {
+    //     console.log("Its Moderate")
+    // } else if (password.length > 16) {
+    //     console.log("Its invald")
+    // } else {
+    //     console.log("Its weak")
+    // }
+
+    //Que:4 Calculate simple interest and apply discount for short term loans
+    // var p = Number(prompt("Enter the amount of loan:"))
+    // var t = Number(prompt("Enter the year:"))
+    // var r = 10
+    // var si = (p * t * r) / 100
+    // if (t < 2) {
+    //     var d = si * 20 / 100
+    //     console.log(d)
+    //     console.log("Total payment:",(p+si)-d)
+    // } else {
+    //     console.log("Total Payment:",p+si)
+    // }
+
+    //Que:5 Determine if a number positive, negative or zero
+    // var num = Number(prompt("enter the number:"))
+    // if (num<0) {
+    //     console.log("It is Negative Number")
+    // } else if(num>0) {
+    //     console.log("It is Positive number")
+    // } else {
+    //     console.log("It is zero")
+    // }
+
+    //Que:5 W.A.P to calculate the electricity bill based on the number of units consumed.Following condition for the tarrif rates
+    // 1) for 100 units 3rs
+    // 2) for 200 units 5rs
+    // 3) for 300 units 7rs
+    // 4) surcharge 50rs
+    var unit = 150;
+    if (unit < 100) {
+        console.log((unit * 3) + 50, "For the less than 100 units")
+    } else if (unit > 100 && unit < 200) {
+        console.log((unit * 5) + 50, "For the more than 100 and less 200 units")
+    } else {
+        console.log((unit * 7) + 50, "For the more 200 and less than 300 units")
+    }
+
+    //Que:6 Classify weight as underweight, normal, or overweight
+    var weight = 80;
+    if (weight <= 50) {
+        console.log("Underweight")
+    } else if (weight > 50 && weight <= 70) {
+        console.log("Normal Weight")
+    } else if (weight >= 80) {
+        console.log("Overweight")
+    } else {
+        console.log("invalid")
+    }
+
+    //Que:6 Calculate person's age in days
+    var age = 22;
+
+</script>
+
+</html>

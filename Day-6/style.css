@@ -1,0 +1,59 @@
+.container {
+    width: 1000px;
+    height: 540px;
+}
+.row1 {
+    background-color: brown;
+    height: 100px;
+}
+.row2 {
+    width: 1000px;
+    height: 40px;
+}
+.items {
+    width: 200px;
+    float: left;
+    height: 40px;
+}
+
+.row3 {
+    width: 1000px;
+    height: 350px;
+}
+.col1 {
+    float: left;
+}
+.r3item {
+    width: 250px;   
+    height: 40px;
+}
+.col2 {
+    width: 750px;
+    height: 200px;
+    float: left;
+}
+.col2 img {
+    float: left;
+}
+.row4 {
+    width: 1000px;
+    height: 50px;
+    background-color: steelblue;
+}
+.row5 {
+    width: 1000px;
+    height: 100px;
+}
+.row5 img {
+    width: 333.33px;
+    height: 100px;
+    float: left;
+}
+.row6 {
+    width: 1000px;
+    height: 50px;
+    background-color: lightpink;
+}
+.footerbar {
+    float: left;
+}

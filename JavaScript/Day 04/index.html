@@ -1,0 +1,113 @@
+<html>
+<script>
+    //Que:1 Write a for loop to print numbers from user defined range using prompt
+    // var i = Number(prompt("Enter the number:"))
+    // var j = Number(prompt("Enter the range:"))
+    // for (i; i<=j; i++) {
+    //     console.log("The Number:", i)
+    // }
+
+    //Que:2 Write a loop to print number from user defined range in reverse order using prompt
+    // var a = Number(prompt("Enter the number for reverse order")) 
+    // var b = Number(prompt("Enter the range"))
+    // for (a; a>=b; a--) {
+    //     console.log("The number in reverse order:", a)
+    // }
+
+    //Que:3 Write a loop to print the multiplication table of a given number using prompt
+    // var table = Number(prompt("Enter the number for table"))
+    // var p = 1;
+    // for (p; p<=10; p++) {
+    //     console.log("Table",table*p)
+    // }
+
+    //Que:4 Write a loop to print every third number between 1 to 30 (user defined range using prompt)
+    // var m = Number(prompt("Enter the num for print third number"))
+    // var n = Number(prompt("Enter the range"))
+    // for (m; m <= n; m+=3) {
+    //      console.log(m)
+    // }
+
+    //Que:5 Write a loop to calculate the sum of number from 1 to 100 (user define range using prompt)
+    // var sum = 0
+    // for (var no = 1; no <= 100; no++) {
+    //     sum += no
+    // }
+    // console.log(sum)
+
+    //Que:6 Write a loop to calculate the sum of numbers from 1 to 100 but stop adding when value exveed 2500
+    // var add = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //     add += i
+    //     if (add <= 2500) {
+    //         console.log(add)
+    //     }
+    // }
+
+    //Que:7 Write a loop to calculate the factorial of the given number by user using prompt
+    // var fact = Number(prompt("Enter the value for factorial"))
+    // var factorial = 1;
+    // for (var f = 1; f <= fact; f++) {
+    //     factorial *= f
+    // }
+    // console.log("Here is the factorial of", fact, "is:",factorial)
+
+    //Que:8 Write a for loop to calculate the sum of odd number and sum of even number from 1 to 50
+    // var ad = 0;
+    // for (var i = 1; i <= 10; i++) {
+    //     if (i % 2 == 0) {
+    //         ad += i
+    //         console.log(ad)
+    //     } else {
+    //         ad += i
+    //         console.log(ad)
+    //     }
+    // }
+
+    //Que:9 Write a for loop to calculate the average of number from  1 to 50
+    var avg = 0
+    for (var i = 1; i <= 50; i++) {
+        avg += i;
+    }
+    console.log("Total:", avg)
+    console.log("Average", avg / 50)
+
+    //Que:10 Write a for loop to calculate the sum of square from 1 to 10
+    var s = 0;
+    for (var i = 1; i <= 10; i++) {
+        s += (i * i)
+    }
+    console.log("Sum of square:", s)
+
+    //Que:11 Write a for loop to print numbers from 1 to 100, butreplace multiples of 3 with "Web" multiples of 5 with "app"
+    for (var i = 1; i <= 100; i++) {
+        if (i % 3 == 0) {
+            console.log("Web")
+        } else if (i % 5 == 0) {
+            console.log("App")
+        } else if (i % 3 == 0 && i % 5 == 0) {
+            console.log("Web App")
+        } else {
+            console.log(i)
+        }
+    }
+
+    //Que:12 Write a for loop to print even numbers form 2 to 20.(user defined range using prompt)
+    var numb = Number(prompt("Enter the number to find Even number"))
+    var end = Number(prompt("Enter the range"))
+    for (var i = numb; i <= end; i++) {
+        if (i % 2 == 0) {
+            console.log(i)
+        }
+    }
+
+    //Que:13 Write a for loop to print the number which divisible by 5 from 50 to 100
+    for (var i = 50; i <= 100; i++) {
+        if (i % 5 == 0) {
+            console.log("Number which is divible by 5 from 50 to 100",i)
+        }
+
+    }
+</script>
+
+</html>
