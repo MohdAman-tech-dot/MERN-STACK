@@ -1,0 +1,66 @@
+<html>
+<script>
+    var arr = [1, "Mohd Amam", true];
+    console.log(arr);
+
+    console.table(arr);  //Show output in tabe form
+
+
+    //Check Largest number from given numbers
+    var arr = [15, 58, 257, 678, 10, 999, 15, 85];
+    var largest = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+    console.log(largest);
+
+    //This only checks if the current element is greater than the current largest value. If true, it updates largest. If false, it just skips the update, but the for loop continues.
+
+    //This loop runs from index 1 to the end of the array, no matter what happens inside the if condition. It does not depend on the result of the if statement.
+
+    // sum of arr numbers
+    var arr = [100, 50, 30, 500, 20,]
+    var sum = arr[0]
+    for (var i = 1; i < arr.length; i++) {
+        sum = arr[i] + sum
+    }
+    console.log(sum)
+
+    //sum of even number
+    var arr = [25, 1, 2, 3, 5, 8, 7, 10]
+    var sum = 0
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            sum = sum + arr[i]
+        }
+    }
+    console.log(sum)
+
+    //Sum of odd number
+    var arr = [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12]
+    var sum = 0
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 != 0) {
+            sum = sum + arr[i]
+        }
+    }
+    console.log(sum)
+
+    var team = ["Dhoni", "Mohammad Shami", "Virat", "Rohti"]
+
+
+    //make a new arr of even number form previous array
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+    var newarr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            newarr.push(arr[i])
+        }
+    }
+    console.log("NEW ARRAY OF EVEN NUMBER:", newarr)
+
+</script>
+
+</html>

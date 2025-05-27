@@ -1,0 +1,30 @@
+<html>
+    <script>
+        //There are 3 types of variables in JavaScript:
+        //1. var - function scoped, can be redeclared and updated
+        var x = 10;
+        //2. let - block scoped, can be updated but not redeclared
+        let y = 20;
+        //3. const - block scoped, cannot be updated or redeclared
+        const z = 30;
+
+        //Example of var
+        var a = 5;
+        var b = 10;
+        var sum = a + b; // sum is 15
+        console.log("Sum using var:", sum);
+
+        //Example of let
+        let c = 15;
+        let d = 25;
+        let product = c * d; // product is 375
+        console.log("Product using let:", product);
+
+        //Example of const
+        const e = 50;
+        // const f = 60; // This would throw an error if uncommented, as const cannot be redeclared
+        const difference = e - 20; // difference is 30
+        console.log("Difference using const:", difference);
+        
+    </script>
+</html>
