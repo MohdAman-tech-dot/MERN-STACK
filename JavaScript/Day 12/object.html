@@ -1,0 +1,37 @@
+<script>
+    var person = {
+        name: "Mohd Aman",
+        age: 22,
+        City: "Makrana",
+        Graduation: true,
+        intro: function () {
+            console.log("How are you ", person.name);
+        }
+    }
+    console.log(person)             //to get object
+    console.log(person["name"])     //to get perticular object key value 
+    console.log(person.intro())     //Function calling in object
+
+
+    var all = {
+        arr: [1, 2, 3, 5],
+        obj: {
+            Goal: "Developer",
+            city: "Jaipur",
+        },
+
+        address: {
+            street: 123,
+            landmark: "gopalpura",
+            func: function () {
+                console.log(this)              
+            }
+        }
+    }
+
+    console.log(all.arr)
+    console.log(all.obj)
+    // console.log(all.func("aman"))
+    console.log(all.address.func())         //this:- jisme bhi hota h usi object ya function ka data show karta h
+    
+</script>

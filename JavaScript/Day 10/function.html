@@ -1,0 +1,38 @@
+<script>
+    function data(name, age) {
+        console.log(`My name is ${name} and i'm ${age} year old`)
+    }
+    data("Mohd Aman", 22)
+
+
+    // var number1 = Number(prompt("Enter the value"))
+    // var number2 = Number(prompt("Enter the second value"))
+    // function add(a, b) {
+    //     console.log(a + b)
+    // }
+    // add(number1, number2)
+
+
+
+    // calcy
+    var value1 = Number(prompt("Enter the number1"))
+    var string = prompt("Enter the operator")
+    var value2 = Number(prompt("Enter the number2"))
+
+    function calcy(a, sign, b) {
+        if (sign === "+") {
+            return a + b;
+        } else if (sign === "-") {
+            return a - b
+        } else if (sign === "*") {
+            return a * b
+        } else if (sign === "/") {
+            return a / b
+        } else if (sign === "%") {
+            return a % b
+        } else {
+            return "Invalid operator"
+        }
+    }
+    console.log(calcy(value1, string, value2))
+</script>

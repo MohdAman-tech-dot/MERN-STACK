@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your Email">
+    <br> <br>
+    <label for="">Password:</label>
+    <input type="password" id="pass" placeholder="Enter the Password">
+    <button onclick="show()">Show</button>
+
+    <script>
+        var password = document.getElementById("pass")
+        var btn = document.getElementsByTagName("button")
+        console.log(btn)
+        function show() {
+            password.type = "text";
+            if (btn[0].innerText === "Show") {
+                btn[0].innerText = "Hide"
+            } else {
+                btn[0].innerText = "Show";
+                password.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

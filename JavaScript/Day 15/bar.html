@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Navabar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #navBar {
+            width: 150px;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            list-style: none;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            transition: right 0.3s ease-in-out;
+        }
+
+        #closeNav {
+            display: none;
+        }
+
+        .newClass {
+            right: 0% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <i id="openNav" class="fa-solid fa-bars" onclick="tog()"></i>
+        <i id="closeNav" class="fa-solid fa-xmark" onclick="tog()"></i>
+        <ul id="navBar">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+
+
+    <script>
+        var open = document.getElementById("openNav")
+        var close = document.getElementById("closeNav")
+        var navbar = document.getElementById("navBar")
+        function tog() {
+            navbar.classList.toggle("newClass");
+            navbar.style.transition = "0.6s";
+            if (navbar.classList.contains("newClass")) {
+                open.style.display = "none";
+                close.style.display = "block";
+            } else {
+                   open.style.display = "block";
+                close.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

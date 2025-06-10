@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: aliceblue;
+            display: inline-block;
+        }
+
+        .dabbe {
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+            margin: 10px;
+        }
+
+        .newClass {
+            background-color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="onlyThis(this)" class="box">1</div>
+    <div onclick="onlyThis(this)" class="box">2</div>
+    <div onclick="onlyThis(this)" class="box">3</div>
+    <div onclick="onlyThis(this)" class="box">4</div>
+    <div onclick="onlyThis(this)" class="box">5</div>
+    <button onclick="change()">click</button>
+
+
+    <div onclick="onlyThis(this)" class="dabbe">1</div>
+    <div onclick="tog(this)" class="dabbe">2</div>
+    <div onclick="tog(this)" class="dabbe">3</div>
+    <div onclick="tog(this)" class="dabbe">4</div>
+    <div onclick="tog(this)" class="dabbe">5</div>
+
+    <script>
+        var changeColor = document.getElementsByClassName("box");
+        console.log(changeColor)
+        function change() {
+            for (data of changeColor) {
+                if (data.innerText === "3") {
+                    data.style.backgroundColor = "blue";
+                    continue;
+                }
+                data.style.backgroundColor = "olive";
+            }
+        }
+
+        function onlyThis(element) {
+            element.style.backgroundColor = "green";
+        }
+
+
+        // toggle
+        function onlyThis(togl) {
+            console.log(togl);
+
+            togl.classList.toggle("newClass");
+        }
+    </script>
+</body>
+
+</html>

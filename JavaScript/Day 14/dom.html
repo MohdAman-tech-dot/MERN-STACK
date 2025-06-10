@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstbox {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            background-color: olive;
+        }
+
+        button {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="firstbox"></div>
+    <button ondblclick="func()">Change-Color</button>
+
+    <h1 id="Institute">Marble City Of Rajasthan</h1>
+    <button onclick="city()">Check</button>
+    <script>
+        // Change background-color on click
+        function func() {
+            var a = document.getElementById("firstbox")
+            a.style.backgroundColor = "crimson"
+        }
+
+        // show city on click
+        function city() {
+            var c = document.getElementById("Institute")
+            c.innerText = "Makrana"
+        }
+    </script>
+</body>
+
+</html>

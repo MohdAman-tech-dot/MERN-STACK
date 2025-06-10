@@ -1,0 +1,133 @@
+<html>
+<script>
+    //Que:1 Write a program to check if two array are equal
+    var arr1 = [1, 2, 3]
+    var arr2 = [1, 2, 3, 4]
+    var equal = true;
+    for (var i = 0; i < arr2.length; i++) {
+        if (arr1[i] != arr2[i]) {
+            equal = false;
+            break;
+        }
+    }
+    if (equal == true) {
+        console.log("Arrays are equal")
+    } else {
+        console.log("Arrays are not equal")
+    }
+
+    // check equal every element in an array
+    var arr1 = [1, 2, 3]
+    var arr2 = [1, 5, 3]
+    for (var i = 0; i < 3; i++) {
+        if (arr1[i] == arr2[i]) {
+            console.log("Equal")
+        } else {
+            console.log("Not equal")
+        }
+    }
+
+    //Que:2 Write a program to find a largest element in an array
+    var arr = [14, 25, 8, 19, 32]
+    largest = arr[0]
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i]
+        }
+    }
+    console.log("Largest number:", largest)
+
+    //Que:3 Write a program to find the smallest element in an array
+    var arr = [5, 9, 2, 14, 7]
+    var smallest = arr[0]
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i]
+        }
+    }
+    console.log("Smallest number", smallest)
+
+    //Que:4 Write a progra to find the average of all element in an array
+    var arr = [20, 30, 40, 50, 60]
+    var avg = 0
+    for (var i = 0; i < arr.length; i++) {
+        avg = arr[i] + avg
+    }
+    console.log("Average:", avg / arr.length)
+
+    //Que:5 Write a program to find the index of a specified element in an arrray
+    var arr = [10, 20, 30, 40, 50]
+    var index = 40
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == index) {
+            console.log("index number", i)
+        }
+    }
+
+    // second method
+    var arr = [10, 20, 30, 40, 50]
+    var index = arr.indexOf(30)
+    console.log("Find index", index)
+
+    //Que:6 Write a program to merge two arrays in single array
+    var arr1 = [1, 2, 3]
+    var arr2 = [4, 5, 6]
+    var newarr = []
+    newarr = arr1 + arr2
+    console.log("Merge two arrays", newarr)
+
+    //second method
+    var arr1 = [1, 2, 3]
+    var arr2 = [4, 5, 6]
+    var mergedarray = arr1.concat(arr2)
+    console.log("Merge two array:", mergedarray)
+
+    //Que:7 Write a program to remove a specified element from an array
+    var arr = [5, 3, 8, 9, 4]
+    var removeelement = 8
+    var newarr = [];
+    for (data of arr) {
+        if (data != removeelement) {
+            newarr.push(data)
+        }
+    }
+    console.log("remove element:", newarr)
+
+    //second method
+    var arr = [5, 3, 8, 9, 4]
+    console.log("Array after remove an element", arr.splice(2, 1))
+
+    //Que:8 Write a program to find the sum of elements at even indices and odd indices separately in an array and make new array of sum
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    var sum = 0
+    var add = 0
+    for (var i = 0; i < arr.length; i++) {
+        if (i % 2 == 0) {
+            console.log("Even", arr[i])
+            sum += arr[i]
+        } else {
+            console.log("odd", arr[i])
+            add += arr[i]
+        }
+    }
+    console.log("Sum of even:", sum)
+    console.log("Sum of odd:", add)
+
+    //Que:9 Write a program to reverse an array
+    var arr = [1, 2, 3, 4, 5]
+    for (var i = arr.length - 1; i >= 0; i--) {
+        console.log("Reverse:", arr[i])
+    }
+
+    //Que:10 Given an array of numbers, write a program that remove all negative number from the array
+    var arr = [-3, 5, -7, -8, 2, -1, 8, 10]
+    var positiveNumber = []
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            positiveNumber.push(arr[i])
+        }
+    }
+    console.log("Positive Numbers:", positiveNumber)
+</script>
+
+</html>

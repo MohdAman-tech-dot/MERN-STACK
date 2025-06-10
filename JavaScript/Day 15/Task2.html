@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect On click</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 20% 45%;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: rgb(4, 164, 228);
+            border: none;
+            border-radius: 16px;
+        }
+        button:hover {
+            animation: spread 1s 2s 1 linear;
+
+        }
+
+        @keyframes effect {
+            0% {
+                transform: scale(0.2);
+                border-radius: 50%;
+            }
+
+            25% {
+                transform: scale(0.4);
+            }
+
+            50% {
+                transform: scale(0.6);
+            }
+
+            75% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <button onclick="animation()">Click</button>
+    </div>
+
+
+    <script>
+        var buton = document.getElementsByTagName("button")
+        function aimation() {
+            buton.classList.toggle("effect")
+        }
+    </script>
+</body>
+
+</html>

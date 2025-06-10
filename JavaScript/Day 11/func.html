@@ -1,0 +1,166 @@
+<script>
+    //Que:1 Simulate a traffic light system, displaying appropriate message using function ("red", "green", "yellow")
+    // function traffic(signal) {
+    //     var color = signal.toLowerCase();
+    //     if (color === "red") {
+    //         return "vehicles must stop and wait for the light to turn green."
+    //     } else if (color === "yellow") {
+    //         return "Warns vehicles that the light is about to turn red, and they should prepare to stop if it is safe to do so."
+    //     } else if (color === "green") {
+    //         return "Vehicles can proceed through the intersection. "
+    //     } else {
+    //         return "Invalid signal code"
+    //     }
+    // }
+    // console.log(traffic("Red"))
+
+    //Que:2 Find the largest number from an array
+    // function checklargest(arr) {
+    //     var largest = arr[0]
+    //     for (data of arr) {
+    //         if (data > largest) {
+    //             largest = data
+    //         }
+    //     }
+    //     return largest
+    // }
+    // console.log(checklargest([15, 25, 255, 5248, 45]))
+
+    //Que:3 Function that determine the quadrant for a given point
+    // function quadrant(x, y) {
+    //     if (x > 0 && y > 0) {
+    //         return "First Quadrant";
+    //     } else if (x < 0 && y > 0) {
+    //         return "Second Quadrant";
+    //     } else if (x < 0 && y < 0) {
+    //         return "Third Quadrant";
+    //     } else if (x > 0 && y < 0) {
+    //         return "Fourth Quadrant";
+    //     } else if (x != 0 && y == 0) {
+    //         return "x-axis"
+    //     } else if (x == 0 && y != 0) {
+    //         return "y-axix"
+    //     } else {
+    //         return "main-axis"
+    //     }
+    // }
+    // console.log(quadrant(-5, 6))
+
+    //Que:4 Find the status of the day it is morning, afternoon, evening, or night by input of time using function
+    // function daystatus(time) {
+    //     if (time < 12 && time >= 5) {
+    //         return "Its Morning"
+    //     } else if (time >= 12 && time < 17) {
+    //         return "Its Afternoon"
+    //     } else if (time >= 17 && time < 20) {
+    //         return "Its Evening Time"
+    //     } else if ((time >= 20 && time <= 24) || (time < 5 && time > 0)) {
+    //         return "Its Night"
+    //     } else {
+    //         return "Your given time is invalid"
+    //     }
+    // }
+    // console.log(daystatus(20))
+
+    //Que:5 Perform the arithmatic operation between two numbers according to given sign
+    // var value1 = Number(prompt("Enter the number1"))
+    // var string = prompt("Enter the operator")
+    // var value2 = Number(prompt("Enter the number2"))
+
+    // function calcy(a, sign, b) {
+    //     if (sign === "+") {
+    //         return a + b;
+    //     } else if (sign === "-") {
+    //         return a - b
+    //     } else if (sign === "*") {
+    //         return a * b
+    //     } else if (sign === "/") {
+    //         return a / b
+    //     } else if (sign === "%") {
+    //         return a % b
+    //     } else {
+    //         return "Invalid operator"
+    //     }
+    // }
+    // console.log(calcy(value1, string, value2))
+
+    //Que:6 Positive, Negative or zero check using function
+    // function checknumber(numb) {
+    //     if (numb < 0) {
+    //         return "Its Negative"
+    //     } else if (numb > 0) {
+    //         return "Its Positive"
+    //     } else {
+    //         return "Its Zero"
+    //     }
+    // }
+    // console.log(checknumber(0))
+
+    //Que:7 Create a funtion to merge two arrays into single array
+    // var ar0 = [25, 56, 250]
+    // var ar1 = [12, 15, 100]
+    // function merge(arr1, arr2) {
+    //     return arr1.concat(arr2)
+    // }
+    // console.log(merge(ar0, ar1))
+
+    //Que:8 Create a function to remove a specified elemetn from an array
+    // var newarray = []
+    // function removearray(array) {
+    //     for (data of array) {
+    //         if (data != 25) {
+    //             newarray.push(data)
+    //         }
+    //     }
+    //     return newarray
+    // }
+    // console.log(removearray([15, 1, 3, 8, 25, 29, 38]))
+
+    //Que:9 Create a function to reverse an array
+    // function reverse(a) {
+    //     return a.reverse()
+    // }
+    // console.log(reverse([1, 2, 3, 4, 5, 6]))
+
+    // //Second method
+    // var reversed = []
+    // function rev(a) {
+    //     for (var i = a.length; i >= 0; i--) {
+    //         reversed.push(a[i])
+    //     }
+    //     return reversed
+    // }
+    // console.log(rev([1, 2, 3, 4, 5, 6]))
+
+    // Que:10 Create function to create new arrya of positive numbers only
+    // var positivenum = []
+    // function positive(n) {
+    //     for (var i = 0; i < n.length; i++) {
+    //         if (n[i] > 0) {
+    //             positivenum.push(n[i])
+    //         }
+    //     }
+    //     return positivenum
+    // }
+    // console.log(positive([25, -52, 2, -8, 5, -7, 6]))
+
+    // Que:11 Create a function to create a new array of even numbers only
+    // var evenN = []
+    // function even(num) {
+    //     for (var i = 0; i < num.length; i++) {
+    //         if (num[i] % 2 == 0) {
+    //             evenN.push(num[i])
+    //         }
+    //     }
+    //     return evenN
+    // }
+    // console.log(even([1, 2, 3, 4, 5, 6, 7]))
+
+    // Que:12 Write a function to print the multiplication table of a given number
+    // function table(number) {
+    //     for (var i = 1; i <= 10; i++) {
+    //         console.log(number + "x" + i + "=" + (number * i))
+    //     }
+    // }
+    // table(2)
+</script>

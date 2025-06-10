@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         #closeNav {
+            display: none;
+        }
+
+        #navBar {
+            width: 150px;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            list-style: none;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            right: -100%;
+        }
+
+        ul li {
+            padding: 10px;
+        }
+
+        .openClose {
+            right: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <i id="openNav" class="fa-solid fa-bars" onclick="navigateBar()"></i>
+        <i onclick="navigateBar()" class="fa-brands fa-instagram" id="closeNav"></i>
+        <ul id="navBar">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <!-- second method -->
+    <script>
+
+        var navBar = document.getElementById("navBar")
+        var openNav = document.getElementById("openNav")
+        var closeNav = document.getElementById("closeNav")
+        function navigateBar() {
+            navBar.classList.toggle("openClose");
+            navBar.style.transition = "0.6s";
+            closeNav.style.display = "block";
+            openNav.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

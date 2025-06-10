@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navBar">
+        <img id="bar" src="images/burger-menu.png" onclick="open()">
+        <div id="hideBar">X</div>
+        <ul id="navigationBar">
+            <li>Home</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </section>
+
+    <script>
+        var click = document.getElementById("navigationBar")
+        function nav() {
+            click.style.left = 0;
+            click.style.transition = "0.6s"
+            var threeLine = document.getElementById("bar")
+            threeLine.style.display = "none";
+            var X = document.getElementById("hideBar")
+            X.style.display = "block";
+            X.style.zIndex = 1
+            X.style.left = "100px"
+        }
+
+        function rev() {
+            var togg = document.getElementById("navigationBar")
+            togg.style.left = "-150px";
+            var threeLine = document.getElementById("bar")
+            threeLine.style.display = "block";
+            var X = document.getElementById("hideBar")
+            X.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

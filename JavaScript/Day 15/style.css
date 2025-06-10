@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navBar {
+    position: relative;
+}
+
+#navBar img {
+    height: 20px;
+    z-index: 1;
+    position: absolute;
+    color: inherit;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#hideBar {
+    font-size: 25px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: 0.9;
+    display: none;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#navBar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    padding: 50px 0 0 30px;
+    width: 150px;
+    height: 100vh;
+    position: absolute;
+    left: -150px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+}

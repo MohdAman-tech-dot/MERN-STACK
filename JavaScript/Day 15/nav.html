@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT OBJECT MODEL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header i {
+            cursor: pointer;
+        }
+
+        #xMark {
+            display: none;
+        }
+
+        #nav {
+            width: 200px;
+            height: 100vh;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            transition: 0.8s;
+        }
+
+        #nav ul {
+            list-style: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        ul li {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <i id="bar" class="fa-solid fa-bars" onclick="op()"></i>
+        <i id="xMark" class="fa-solid fa-xmark" onclick="clo()"></i>
+        <nav id="nav">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script>
+        var navBar = document.getElementById("nav")
+        var open = document.getElementById("bar")
+        var close = document.getElementById("xMark")
+
+        function op() {
+            navBar.style.right = 0;
+            open.style.display = "none";
+            close.style.display = "block"
+        }
+        function clo() {
+            navBar.style.right = "-100%";
+            open.style.display = "block";
+            close.style.display = "none"
+        }
+    </script>
+
+    
+</body>
+
+</html>
